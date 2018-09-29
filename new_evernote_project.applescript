@@ -5,7 +5,7 @@ repeat
 end repeat
 tell application "Evernote"
 	if tag named projectName exists then
-		display dialog "exists"
+		tell current application to display dialog "exists"
 	else
 		set parentTag to tag named "projects"
 		set projectTag to make tag with properties {name:projectName, parent:parentTag}
