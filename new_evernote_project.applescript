@@ -10,7 +10,7 @@ tell application "Evernote"
 		set parentTag to tag named "projects"
 		set projectTag to make tag with properties {name:projectName, parent:parentTag}
 		set parent of projectTag to parentTag
-		set projectNote to create note title projectName notebook "projects" with text " "
+		set projectNote to create note title projectName notebook "H1: Projects" with text " "
 		assign projectTag to projectNote
 		open note window with projectNote
 		activate
